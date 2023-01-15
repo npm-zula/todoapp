@@ -42,7 +42,7 @@ const Hero = () => {
     <div>
         {!click ? (
         <div className="App">
-            <section className="bg-accent-two py-64 md:py-48 text-bg">
+            <section className="bg-accent-two py-72 md:py-48 text-bg">
                 <div className="container md:my-20 mx-auto  items-center justify-center md:justify-between">
                     <div className="all-notes text-center mx-5 md:mx-auto max-w-md justify-self-center pb-5 md:pb-10 ">
                         <h1 className="hero-text-one text-3xl md:text-5xl text-left md:px-2 px-6">
@@ -98,7 +98,7 @@ const Hero = () => {
                     <div className='all-notes text-start mx-5 md:mx-auto max-w-md pb-2 md:pb-6 '>
                         <div className="todo-list ">
                             {!empty ? (
-                            <div>
+                            <div className='md:mb-12 mb-10'>
                                 <ul className="max-w-md divide-y divide-accent-one bg-bg p-2 px-5  ">
                                     {
                                         task.map((item,i) => (
