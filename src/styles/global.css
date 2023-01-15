@@ -1,0 +1,60 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --textc : '#D7E9B9',
+	--bg : '#FAAB78',
+	--accent-one : '#FFFBAC',
+	--accent-two : '#FFD495',
+	--black: '#0F0E0E'
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+}
+
+h1{
+    font-weight: 700;
+}
+
+h2{
+    font-weight: 500;
+}
+
+
+/* .hero-text-two {   
+  background-image: linear-gradient(rgba(250, 171, 120, 1),rgba(250, 171, 120, 1));
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  transition: background-size .7s, background-position .5s ease-in-out;
+  }
+
+.hero-text-two:hover {
+    background-size: 100% 100%;
+    background-position: 0% 100%;
+    transition: background-position .7s, background-size .5s ease-in-out;
+} 
+   */
+
+   .hero-text-two{
+    --s: 0.1em;   /* the thickness of the line */
+    --c: #FFFBAC; /* the color */
+
+    color: #0000;
+    padding-bottom: var(--s);
+    background: 
+      linear-gradient(90deg,var(--c) 50%,#D7E9B9 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: 0.5s;
+  }
+  .hero-text-two:hover {--_p: 98%}
+
+  
+ 

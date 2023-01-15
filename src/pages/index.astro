@@ -1,0 +1,11 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+import Hero from "../components/Hero"
+---
+<MainLayout title = "Todo Todo.">
+	<Header/>
+	<Hero client:load />
+	<Footer/>
+</MainLayout>
